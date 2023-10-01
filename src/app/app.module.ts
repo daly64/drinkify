@@ -12,7 +12,6 @@ import {RecipesModule} from "./shared/modules/recipes/recipes.module";
   declarations: [
     AppComponent,
     SplashScreenComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -23,4 +22,5 @@ import {RecipesModule} from "./shared/modules/recipes/recipes.module";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

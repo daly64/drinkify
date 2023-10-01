@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Router} from "@angular/router";
+import {NavigationService} from "../../shared/services/navigation.service";
 
 @Component({
   selector: 'recipe-detail-screen',
@@ -7,15 +7,13 @@ import {Router} from "@angular/router";
     <p>
       recipe-detail-screen works!
     </p>
-    <button mat-raised-button color="primary" (click)="navigate()"> navigate</button>
+    <button mat-raised-button color="primary" (click)="goto.toSplashScreen()"> navigate</button>
   `,
   styles: []
 })
 export class RecipeDetailScreenComponent {
-  constructor(private router: Router) {
+  constructor(public goto: NavigationService) {
   }
 
-  navigate() {
-    this.router.navigate([''])
-  }
+
 }

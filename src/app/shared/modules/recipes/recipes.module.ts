@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import {RecipeDetailScreenComponent} from "../../../views/recipe-detail-screen/recipe-detail-screen.component";
 import {RecipesListComponent} from "../../../views/recipes-list/recipes-list.component";
 import {MatButtonModule} from "@angular/material/button";
+import {ToolbarComponent} from "../../components/toolbar/toolbar.component";
+import {ListComponent} from "../../components/list/list.component";
 
 
 
@@ -14,7 +16,9 @@ import {MatButtonModule} from "@angular/material/button";
   ],
   imports: [
     CommonModule,
-    MatButtonModule
+    MatButtonModule,
+    ToolbarComponent,
+    ListComponent
   ]
 })
 export class RecipesModule { }

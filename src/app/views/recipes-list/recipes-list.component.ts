@@ -1,22 +1,21 @@
 import {Component} from '@angular/core';
-import {Router} from "@angular/router";
+import {NavigationService} from "../../shared/services/navigation.service";
 
 @Component({
   selector: 'recipes-list',
   template: `
-    <p>
-      recipes-list works!
-    </p>
-    <button mat-raised-button color="primary" (click)="navigate()"> navigate</button>
+    <toolbar/>
+    <list/>
+      <p>
+          recipes-list works!
+      </p>
   `,
   styles: [
   ]
 })
 export class RecipesListComponent {
-  constructor(private router: Router) {
+  constructor(public goto: NavigationService) {
   }
 
-  navigate() {
-    this.router.navigate(['recipe_detail'])
-  }
+
 }
