@@ -5,16 +5,15 @@
     "preparation_time": "10min",
     "difficulty": "Facile",
     "budget": "Budget moyen",
-    "calories/people": "",
+    "calories/people": 0,
     "description": "Cocktail traditonnel cubain.",
     "ingredients": [
-      "½ l de limonade",
-      "1,5 cl de sucre de canne",
-      "0,5 jus de citron",
-      "6,5 cl de rhum blanc",
-      "0,5 citron vert",
-      "0,5 jus de citron",
-      "2 feuilles de menthe"
+      {"qty": 0.5,"unite": "l","name": "limonade"},
+      {"qty": 1.5,"unite": "cl","name": "sucre de canne"},
+      {"qty": 0.5,"unite": "l","name": "jus de citron"},
+      {"qty": 6.5,"unite": "cl","name": "de rhum blanc"},
+      {"qty": 0.5,"unite": "","name": "citron vert"},
+      {"qty": 2,"unite": "","name": "feuilles de menthe"}
     ],
     "materials": [
       "Bol(s)"
