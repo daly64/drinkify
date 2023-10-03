@@ -4,11 +4,9 @@ import {NavigationService} from "../../shared/services/navigation.service";
 @Component({
   selector: 'recipes-list',
   template: `
-    <toolbar/>
-    <list/>
-      <p>
-          recipes-list works!
-      </p>
+      <toolbar/>
+      <list/>
+      <!--      <p>          recipes-list works!      </p>-->
   `,
   styles: [
   ]
