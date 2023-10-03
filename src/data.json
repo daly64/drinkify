@@ -2,18 +2,18 @@
   {
     "name": "Mojito",
     "image": "mojito.jpeg",
-    "preparation_time": "10min",
+    "preparation_time": 10,
     "difficulty": "Facile",
     "budget": "Budget moyen",
     "calories/people": 0,
     "description": "Cocktail traditonnel cubain.",
     "ingredients": [
-      {"qty": 0.5,"unite": "l","name": "limonade"},
-      {"qty": 1.5,"unite": "cl","name": "sucre de canne"},
-      {"qty": 0.5,"unite": "l","name": "jus de citron"},
-      {"qty": 6.5,"unite": "cl","name": "de rhum blanc"},
-      {"qty": 0.5,"unite": "","name": "citron vert"},
-      {"qty": 2,"unite": "","name": "feuilles de menthe"}
+      {"qty": 0.5,"image": "limonade.jpeg","unite": "l","name": "limonade"},
+      {"qty": 1.5,"image": "sucre-de-canne.jpeg","unite": "cl","name": "sucre de canne"},
+      {"qty": 0.5,"image": "jus-de-citron.jpeg","unite": "l","name": "jus de citron"},
+      {"qty": 6.5,"image": "rhum-blanc.jpeg","unite": "cl","name": "de rhum blanc"},
+      {"qty": 0.5,"image": "citron-vert.jpeg","unite": "","name": "citron vert"},
+      {"qty": 2,"image": "menthe.jpeg","unite": "","name": "feuilles de menthe"}
     ],
     "materials": [
       "Bol(s)"
