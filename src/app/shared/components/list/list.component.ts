@@ -2,29 +2,40 @@ import {Component} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MatListModule} from "@angular/material/list";
 import {RecipeCardComponent} from "../recipe-card/recipe-card.component";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {recipe} from "../recipe-card/recipe";
+import {MatCardModule} from "@angular/material/card";
 
 
 @Component({
   selector: 'list',
   standalone: true,
-  imports: [CommonModule, MatListModule, RecipeCardComponent],
+  imports: [CommonModule, MatListModule, RecipeCardComponent, MatGridListModule, MatCardModule],
   template: `
-      <mat-selection-list role="list">
 
-          <recipe_card role="listitem"/>
-          <!--                <mat-list-item role="listitem">Item 1</mat-list-item>
-                          <mat-list-item role="listitem">Item 2</mat-list-item>
-                          <mat-list-item role="listitem">Item 3</mat-list-item>-->
-      </mat-selection-list>
+      <mat-grid-list cols="1" gutterSize=10 rowHeight=25rem>
+          <mat-grid-tile><recipe_card/></mat-grid-tile>
+          <mat-grid-tile><recipe_card/></mat-grid-tile>
+          <mat-grid-tile><recipe_card/></mat-grid-tile>
+          <mat-grid-tile><recipe_card/></mat-grid-tile>
 
+      </mat-grid-list>
 
 
 
 
   `,
   styles: [`
+    mat-grid-list{
+      margin-top: 10px;
+      mat-grid-tile{
+        //background-color: aqua;
+      }
+    }
+
   `]
 })
 export class ListComponent {
 
+  protected readonly recipe = recipe;
 }
