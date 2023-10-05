@@ -5,11 +5,11 @@ import {NavigationService} from "../../shared/services/navigation.service";
   selector: 'recipes-list',
   template: `
       <toolbar/>
+      <search_bar/>
       <list/>
-      <!--      <p>          recipes-list works!      </p>-->
+
   `,
-  styles: [
-  ]
+  styles: [``]
 })
 export class RecipesListComponent {
   constructor(public goto: NavigationService) {

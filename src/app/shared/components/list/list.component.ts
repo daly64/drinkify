@@ -12,30 +12,31 @@ import {MatCardModule} from "@angular/material/card";
   standalone: true,
   imports: [CommonModule, MatListModule, RecipeCardComponent, MatGridListModule, MatCardModule],
   template: `
+    <mat-list>
+      <mat-selection-list  *ngFor="let number of numbers">
+        <recipe_card/>
+      </mat-selection-list>
+    </mat-list>
 
-      <mat-grid-list cols="1" gutterSize=10 rowHeight=25rem>
-          <mat-grid-tile><recipe_card/></mat-grid-tile>
-          <mat-grid-tile><recipe_card/></mat-grid-tile>
-          <mat-grid-tile><recipe_card/></mat-grid-tile>
-          <mat-grid-tile><recipe_card/></mat-grid-tile>
-
-      </mat-grid-list>
 
 
 
 
   `,
   styles: [`
-    mat-grid-list{
-      margin-top: 10px;
-      mat-grid-tile{
-        //background-color: aqua;
-      }
+    mat-list{margin-top: 2dvh}
+    mat-selection-list {
+      width: 85dvw;
+      margin: auto;
+    }
+
+    mat-selection-list:nth-child(n) {
+      padding: 0;
     }
 
   `]
 })
 export class ListComponent {
-
+numbers=[0,1,2,3,4,5,6,7,8,9,10]
   protected readonly recipe = recipe;
 }

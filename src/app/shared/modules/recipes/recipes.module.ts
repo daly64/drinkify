@@ -6,6 +6,7 @@ import {RecipesListComponent} from "../../../views/recipes-list/recipes-list.com
 import {MatButtonModule} from "@angular/material/button";
 import {ToolbarComponent} from "../../components/toolbar/toolbar.component";
 import {ListComponent} from "../../components/list/list.component";
+import {SearchBarComponent} from "../../components/shearchebar/search-bar.component";
 
 
 
@@ -14,11 +15,12 @@ import {ListComponent} from "../../components/list/list.component";
     RecipesListComponent,
     RecipeDetailScreenComponent
   ],
-  imports: [
-    CommonModule,
-    MatButtonModule,
-    ToolbarComponent,
-    ListComponent
-  ]
+    imports: [
+        CommonModule,
+        MatButtonModule,
+        ToolbarComponent,
+        ListComponent,
+        SearchBarComponent
+    ]
 })
 export class RecipesModule { }
